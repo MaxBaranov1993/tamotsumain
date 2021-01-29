@@ -1,10 +1,9 @@
 <h1>Tamotsu</h1>
 {{greeting}}
 
-
 <br><br>
-<textarea id="w3review" name="w3review" rows="4" cols="50">
-At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-</textarea>
-<br><br>
-<button>Reverse</button>
+<form action={% url 'reverse' %}>
+    <textarea  name="usertext" rows="10" cols="50"> </textarea>
+    <br><br>
+    <input type="submit" value = "Reverse!">
+</form>

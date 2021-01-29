@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.about),
     path('product/', views.product),
+    path('reverse/', views.reverse, name='reverse'),
 
 ]
